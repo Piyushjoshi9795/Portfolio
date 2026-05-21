@@ -23,6 +23,14 @@ Collaborated closely with a cross-functional team to align front-end design with
 ];
 
 export const PROJECTS = [
+
+  {
+    title: "Weather App",
+    image: project5,
+    description: "Architected a full-stack weather app with JWT-based auth — access tokens (15 min) in localStorage and HttpOnly refresh token cookies (7 days) with silent auto-rotation via Axios interceptors, making token expiry invisible to users. Implemented Redis caching layer for weather API responses (10-min TTL), reducing redundant OpenWeatherMap API calls; added a cron-based pre-fetcher every 9 minutes to warm cache for 6 high-traffic cities, ensuring near-instant responses. Integrated Apache Kafka for event-driven email notifications — welcome emails on registration, login alerts, and daily 8 AM personalized weather digests via Nodemailer, all processed asynchronously without blocking API responses. Built IP-based rate limiting (100 requests/15 min) and bcrypt password hashing; automated nightly refresh token cleanup via cron to prevent MongoDB bloat. Implemented debounced search (500ms) on the frontend to minimize redundant API calls on partial input.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Redis", "Kafka", "JWT", "Axios"],
+    link:"https://weatherapp-frontend-six-mu.vercel.app/"
+  },
   {
     title: "BlogPost",
     image: project5,
