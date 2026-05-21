@@ -3,13 +3,27 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
+import weather_photo from "../assets/projects/weather_photo.png";
 import food from "../assets/projects/project-food.jpg";
 
-export const HERO_CONTENT = `I am a passionate front end developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and jQuery, as well as back-end technologies like Coldfusion, MySQL, MSSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I’m a Software Developer focused on building modern, responsive, and scalable web applications using React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, and Redux Toolkit. I enjoy creating clean user interfaces, optimizing performance, and developing seamless digital experiences that solve real-world problems.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile front-end developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React, jQuery, Coldfusion and TailwindCSS. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active and exploring new technologies.`;
-
+export const ABOUT_TEXT = `I am a passionate software developer with experience in building full-stack web applications using modern technologies like React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, Redux Toolkit, Node.js, Express.js, MongoDB, MySQL, and AWS. I enjoy developing scalable applications, integrating APIs, and creating intuitive user experiences with clean and efficient code. I have worked on projects including AI-powered applications, interactive dashboards, and dynamic web platforms that focus on performance and usability. Along with development, I actively practice Data Structures and Algorithms and enjoy continuously learning new technologies to improve my skills as a developer.`;
 export const EXPERIENCES = [
+  {
+    year: "March-2025 - Present",
+    role: "Software developer",
+    company: "SHL",
+    description: ` Developed 8+ full-stack features using React.js, Node.js, Express.js and other technologies, delivering scalable
+    solutions that supported 1,000+ active users.
+    • Incorporated various third-party libraries, including Redux, Redux-toolkit and Tailwind CSS, resulting in a
+    30% improvement in application performance and a 25% reduction in development time.
+    • Optimized Redux architecture, enhancing performance by 20% and streamlining state management for improved
+    user interactivity.
+    • Enhanced system efficiency by identifying repetitive operational tasks and implementing automation scripts and
+    backend services, resulting in improved workflow productivity and reduced manual intervention.`,
+    technologies: ["Nodejs", "React.js", "MongoDB", "MSSQL", "Mysql", "Redux", "AWS", "ElasticSearch"],
+  },
   {
     year: "Jan-2024 - June-2024",
     role: "Software developer Intern",
@@ -23,10 +37,16 @@ Collaborated closely with a cross-functional team to align front-end design with
 ];
 
 export const PROJECTS = [
-
+   {
+    title: "CodeMate",
+    image: weather_photo,
+    description: "Developed a scalable full-stack dating platform using the MERN stack, enabling users to connect through profile-based matching and interaction features. Developed a secure Node.js/Express backend with JWT authentication, Stripe payment integration, and MongoDB for scalable data management. Engineered a responsive frontend using React, Redux Toolkit, and Tailwind CSS for efficient state handling and modern UI. Containerized the application using Docker and Docker Compose and configured Nginx reverse proxy for scalable and reliable deployment.",
+    technologies: ["Nodejs", "Reactjs", "Expressjs", "Mongodb", "REST API", "Stripe", "Docker", "Nginx"],
+    link: "https://codemate-frontend-bfx9.onrender.com"
+  },
   {
     title: "Weather App",
-    image: project5,
+    image: weather_photo,
     description: "Architected a full-stack weather app with JWT-based auth — access tokens (15 min) in localStorage and HttpOnly refresh token cookies (7 days) with silent auto-rotation via Axios interceptors, making token expiry invisible to users. Implemented Redis caching layer for weather API responses (10-min TTL), reducing redundant OpenWeatherMap API calls; added a cron-based pre-fetcher every 9 minutes to warm cache for 6 high-traffic cities, ensuring near-instant responses. Integrated Apache Kafka for event-driven email notifications — welcome emails on registration, login alerts, and daily 8 AM personalized weather digests via Nodemailer, all processed asynchronously without blocking API responses. Built IP-based rate limiting (100 requests/15 min) and bcrypt password hashing; automated nightly refresh token cleanup via cron to prevent MongoDB bloat. Implemented debounced search (500ms) on the frontend to minimize redundant API calls on partial input.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Redis", "Kafka", "JWT", "Axios"],
     link:"https://weatherapp-frontend-six-mu.vercel.app/"
